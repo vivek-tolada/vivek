@@ -1,28 +1,41 @@
-<!-- login.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
+    
+    <!-- Link to External CSS -->
     <link rel="stylesheet" href="styles1.css">
+    
+    <!-- Link to External JavaScript -->
     <script src="login.js" defer></script>
 </head>
 <body>
+
     <div class="login-container">
         <form id="loginForm">
             <h2>Login</h2>
+            
+            <!-- Username Field -->
             <div class="input-group">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required>
             </div>
+            
+            <!-- Password Field -->
             <div class="input-group">
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" required>
             </div>
+            
+            <!-- Login Button -->
             <button type="submit" id="loginBtn">Login</button>
+            
+            <!-- Error Message -->
             <p id="error-message" class="error-message"></p>
         </form>
     </div>
+
 </body>
 </html>

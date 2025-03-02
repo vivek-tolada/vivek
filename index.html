@@ -3,16 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore, learn, and discover more about the services and experiences on My Enhanced Webpage.">
+    <meta name="keywords" content="web development, services, about me, contact, login">
+    <meta name="author" content="Your Name">
+    <meta name="robots" content="index, follow">
     <title>My Enhanced Webpage</title>
+    
+    <!-- Link to CSS Stylesheet -->
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- External JavaScript -->
     <script src="script.js" defer></script>
+
+    <!-- Open Graph for Social Media Sharing -->
+    <meta property="og:title" content="My Enhanced Webpage">
+    <meta property="og:description" content="Explore, learn, and discover more about the services and experiences on My Enhanced Webpage.">
+    <meta property="og:image" content="your-image-url.jpg">
+    <meta property="og:url" content="https://www.yourwebsite.com">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
         <h1>Welcome to My Enhanced Webpage</h1>
         <p>Explore, Learn, and Have Fun!</p>
     </header>
 
+    <!-- Navigation Bar -->
     <nav>
         <ul>
             <li><a href="#about">About</a></li>
@@ -22,11 +38,13 @@
         </ul>
     </nav>
 
+    <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
         <p>Learn about me, my passions, and my journey in the world of technology.</p>
     </section>
 
+    <!-- Services Section -->
     <section id="services">
         <h2>Services</h2>
         <p>Here are some services I offer.</p>
@@ -38,14 +56,37 @@
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
         <h2>Contact</h2>
         <p>If you have any questions, feel free to reach out!</p>
         <button onclick="showMessage()">Click Me!</button>
     </section>
 
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2025 My Webpage. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        // JavaScript for toggling the additional services
+        const toggleButton = document.getElementById('toggleServices');
+        const extraServices = document.getElementById('extraServices');
+
+        toggleButton.addEventListener('click', function() {
+            if (extraServices.style.display === 'none') {
+                extraServices.style.display = 'block';
+                toggleButton.textContent = 'Show Less';
+            } else {
+                extraServices.style.display = 'none';
+                toggleButton.textContent = 'Show More';
+            }
+        });
+
+        // JavaScript for showing a simple message
+        function showMessage() {
+            alert("Thank you for reaching out! We'll get back to you soon.");
+        }
+    </script>
 </body>
 </html>
